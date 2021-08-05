@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+}
+
+#title {
+  position: absolute;
+  left: 50%;
+  width: 600px;
+  margin-left: -300px;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+#game-canvas {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  top: 50%;
+  margin-top: -400px;
+}
+
+#start-div {
+  width: 50%;
+  margin-left: 25%;
+  height: 50%;
+}
+
+#circle {
+  position: absolute;
+  border: 10px solid #333333;
+  border-radius: 200px;
+  width: 400px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  background-color: #333333;
+  display: center;
+}
+
+#triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 400px solid #d50505;
+  transform: scaleY(1.25) scaleX(0.85);
+  top: -5%;
+}
+
+#start-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 150px;
+  height: 50px;
+  margin-left: -66.5px;
+  border-radius: 12px;
+  background-color: #606060;
+  border: 2px solid #333333;
+  transition-duration: 0.4s;
+  font-size: 20px;
+}
+
+#start-button:hover {
+  background-color: #000000;
+  color: white;
+  border: 2px solid #000000;
+}
+
+#canvas-div {
+  position: absolute;
+  width: 850px;
+  height: 850px;
+  left: 50%;
+  margin-left: -425px;
+  top: 50%;
+  margin-top: -425px;
+}
+
+#shop-title {
+  color: white;
+  text-align: center;
+}
+
+#shop-title-div {
+  border-bottom: skyblue dotted 3px;
+  margin-bottom: 30px;
+  padding-bottom: 0;
+}
+
+#shop-div {
+  width: 27.5%;
+  height: 50%;
+  border: skyblue solid 5px;
+  float: right;
+  margin-top: 5%;
+  padding: 10px;
+}
+
+.shop-item {
+  padding: 10px;
+  border: #BFFF00 solid 3px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.shop-item p strong {
+  font-size: 30px;
+}
+.shop-item p {
+  font-size: 25px;
+}
+.shop-item button {
+  background-color: black;
+  color: skyblue;
+  border: skyblue solid 4px;
+  font-size: 20px;
+}
+.shop-item button:hover {
+  background-color: red;
+}
+
+#leftside {
+  position: absolute;
+  float: left;
+  width: 30%;
+  top: 50%;
+  margin-top: -167.5px;
+  margin-left: 20px;
+  border: 2px solid white;
+  height: 375px;
+}
+
+.game-screen {
+  display: none;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+#leftside-ingame {
+  position: absolute;
+  float: left;
+  width: 22.5%;
+  top: 30%;
+  margin-top: -167.5px;
+  margin-left: 20px;
+  border: 2px solid white;
+  height: 750px;
+}
+
+.end-screen {
+  width: 50%;
+  margin-left: 25%;
+  display: none;
+  color: red;
+  position: absolute;
+  top: 50%;
+  height: 200px;
+  margin-top: -100px;
+  text-align: center;
+}

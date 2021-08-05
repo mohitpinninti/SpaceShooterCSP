@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Create Task: Space Shooter</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<button onclick = "startGame()" id = "start-button" class = "start-screen">START</button>
+<div id = "start-div" class = "start-screen">
+  <div id = "circle">
+    <div id = "triangle">
+    </div>
+  </div>
+</div>
+<div id = "canvas-div"></div>
+<div id="leftside" class = "start-screen">
+  <h1>HOW TO PLAY</h1>
+  <p>Press WASD to move</p>
+    <p>Shift to stop moving</p>
+    <p>Left click to shoot</p>
+    <p>E to lunge forward</p>
+    <p>Q and F are unlockable abilities in the shop</p>
+</div>
+<div id = "shop-div" class = "game-screen">
+  <div id = "shop-title-div">
+    <h1 id = "shop-title">Shop</h1>
+  </div>
+  <div id = "shop-content">
+    <div class = "shop-item" style = "border-color:yellow;">
+      <p><strong>Rampant Reload (Ability)</strong><br><span class = "item-cost-span">Cost: <span class = "item-cost">2000</span> coins</span></p>
+      <button onclick = "changeAbilities.powerBuff(this)">Buy Item</button>
+    </div>
+    <div class = "shop-item" style = "border-color:red;">
+      <p><strong>Health Boost (Ability)</strong><br><span class = "item-cost-span">Cost: <span class = "item-cost">3000</span> coins</span></p>
+      <button onclick = "changeAbilities.healthBoost(this)">Buy Item</button>
+    </div>
+    <div class = "shop-item" style = "border-color:yellow;">
+      <p><strong>Health Regeneration</strong><br><span class = "item-cost-span">Cost: <span class = "item-cost">1000</span> coins</span></p>
+      <button onclick = "changeAbilities.healthRegen(this)">Upgrade</button>
+    </div>
+  </div>
+</div>
+<div id="leftside-ingame" class = "game-screen">
+  <h1>ABILITY COOLDOWNS</h1>
+  <p>LUNGE</p>
+  <p id="lunge-display"></p>
+  <p>Rampant Reload</p>
+  <p id="powerBuff-display"></p>
+  <p>HEALTH BOOST</p>
+  <p id="healthBoost-display"></p>
+</div>
+<div id = "title">
+  <h1>Space Shooter</h1>
+</div>
+<div class = "end-screen">
+  <h2>Game Over!</h2>
+  <h3>Your score was <span id = "score"></span></h3>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
